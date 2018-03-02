@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mini Akiba Product list Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="slider.css">
+  
+    <style>
+      
+      @font-face {
+    font-family: 'metro';
+    src: url('./fonts/metro-webfont.woff2') format('woff2'),
+         url('./fonts/metro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+      
+      header {
+          background-color: #555;
+          padding: 10px;
+      }
+      .navbar {
+    height: 200px;
+      margin-bottom: 0;
+      border-radius: 0;
+    background: linear-gradient(rgba(255,118, 64,1), rgba(255,0,0,0));
+    }
+      body {
+          background-color: white;
+           background-image: url('cherry%20blossom%20effects3.gif');
+          background-size: 1950px 1000px;
+          font-size: 15px;
+          color: black;
+          text-align: center;
+      }
+   
+      #logoimage {
+          width:  316px;
+          height: 98px;
+      }
+        table {
+                border: 1px transparent;
+                float: left;
+        }
+      h1 {
+          font-family: "metro";
+          text-align: center;
+          color:black;
+          font-size: 15pt;
+      }
+    
+      h3 {
+          font-family: "metro"; 
+          font-size: 10pt;
+          color: black;
+      }
+      a {
+          font-family: "metro";
+          font-size: 10pt;
+      }
+        p {
+            font-size: 10pt;
+            color: black;
+            text-align: center;
+        }
+        h2 {
+            font-family: "metro";
+            font-size: 15pt;
+            color: blue;
+        }
+        .page {
+            margin-top: 900px;
+        }
+        .prodlist {
+            width: 60%;
+        }
+        #product1 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product1:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product2 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product2:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product3 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product3:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product4 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product4:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product5 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product5:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product6 {
+            width: 50%;
+            border: 2px solid black;
+            float: left;
+        }
+        #product6:hover {
+            transition: all 200ms ease-in;
+             transform: scale(3.0);
+            -moz-transform: scale(3.0);
+        }
+        #product1, #product2, #product3 {
+            margin: 20px;
+        }
+        #product4, #product5, #product6 {
+            margin: 20px;
+        }
+        .prodimg {
+            margin-left: 100px;
+        }
+        .checklist {
+            float: right;
+            width: 35%;
+            margin-right: -650px;
+            height: 900px;
+            background:linear-gradient(rgba(255,118, 64,1), rgba(255,0,0,0));
+            border: 5px solid black;
+        }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    footer {
+      background-color: #555;
+        float: none;
+      color: white;
+      padding: 15px;
+    
+    }
+      
+  </style>
+</head>
+<body>
+<header>
+    </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="website%20final%20project.html">
+        <img src="logo%20complete.gif" id="logoimage">
+        </a>
+    </div>
+      
+      <div>
+      <h3>Welcome all to Mini Akiba! A Canadian Store with the latest Japanese Products and goods!</h3>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Search</a></li>
+        <li><a href="#">Online Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Distributers</a></li>
+          <li><a href="#">Media Inquiries</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+              <select name="province" id="province">
+    <option value="choose">Language</option>
+    <option value="BC">English</option>
+    <option value="AB">Japanese</option>
+    <option value="SK">Chinese</option>
+</select>  
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> go to cart</a></li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+
+    <h1>Reccomended Products</h1>
+    <div class="prodlist">
+   <table class="prodimg">
+        <tr>
+       <th><img src="DSCF7586.JPG" id="product1" alt="product1"></th>
+       <th><img src="DSCF7599.JPG" id="product2" alt="product2">
+    </th>
+       <th><a href="website%20product%20page.html"><img src="DSCF7607.JPG" id="product3" alt="product1">
+            </a></th></tr>
+        <tr>
+        <th>&nbsp;Mikuzukin PVC Figure ($190.00)</th>
+        <th>Ultra Girl Humanization Project "Guts Seijin" PVC Figure ($170.00 CAD)</th>
+        <th>Figma "Caster" ($90.00 CAD)</th>
+       </tr>
+    <tr>
+       <th><img src="DSCF7623.JPG" id="product4" alt="product4"></th><th><img src="DSCF7631.JPG" id="product5" alt="product5"></th><th><img src="DSCF7639.JPG" id="product6" alt="product6"></th></tr>
+    <tr>
+       <th>Nendoroid "Cyan" ($65.00 CAD)</th>
+       <th>AGP Haruna Kai-Ni ($210.00)</th>
+       <th>MG Nu-Gundam Ver.Ka ($75.00)</th>
+       </tr>
+        </table>
+    <div class="checklist">
+    <h3>Search Keyword</h3>
+    <input type="text" name="productname" id="productname" size="30"><button type="submit" name="search" value="search" class="css3button">Search</button><br/>
+    <br/>
+        <h3>Category Filters</h3>
+        <br/>
+        
+<input type="checkbox" name="Model Kit" value="category1" checked>Model Kit<br/><br/>
+    
+<input type="checkbox" name="figure" value="category2" checked> Figure<br><br/>
+    
+<input type="checkbox" name="action Figure" value="category3">Action Figure<br><br/>  
+
+<input type="checkbox" name="toy" value="category4">Toy<br><br/> 
+
+<input type="checkbox" name="Anime-related" value="category5">Anime- Related<br><br/>
+        
+<input type="checkbox" name="Game-related" value="category6">Game-Related<br><br/>
+        
+<input type="checkbox" name="Manga-related" value="category7">Manga-Related<br> <br/>
+        
+<input type="checkbox" name="Vocaloid Series" value="category8">Vocaloid Series<br><br/>
+        
+<input type="checkbox" name="DVD" value="category9">DVD<br><br/> 
+        
+<input type="checkbox" name="Game" value="category10">Game<br><br/>
+        
+<input type="checkbox" name="Game Console" value="category11">Game Console<br><br/>
+        
+<input type="checkbox" name="Magazine" value="category12">Magazine<br><br/> 
+        
+<input type="checkbox" name="Manga" value="category13">Manga<br><br/>
+        
+<input type="checkbox" name="Gacha items" value="category14">Gacha Hobbies<br><br/>
+        
+<input type="checkbox" name="Accessories" value="category15">Accessories<br><br/> 
+        
+<input type="checkbox" name="Cosplay" value="category16">Cosplay<br><br/>
+        
+<input type="checkbox" name="CD" value="category16">CD<br><br/>
+        
+<input type="checkbox" name="Limited Edition" value="category17">Limited Edition<br><br/>
+        
+
+
+    
+    </div>
+    
+   </div> 
+    <div class="page"><h2>1 | 2 | 3 | 4 | 5 | 6 |...| 50</h2></div>
+    
+    <footer class="container-fluid text-center">All rights belong to Keiju Sekiguchi and Mini Akiba</footer>
+    
+      </body>

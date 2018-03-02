@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mini Akiba website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="slider.css">
+  
+    <style>
+      
+      @font-face {
+    font-family: 'metro';
+    src: url('./fonts/metro-webfont.woff2') format('woff2'),
+         url('./fonts/metro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+      
+      header {
+          background-color: #555;
+          padding: 10px;
+      }
+      .navbar {
+    height: 200px;
+      margin-bottom: 0;
+      border-radius: 0;
+    background: linear-gradient(rgba(255,118, 64,1), rgba(255,0,0,0));
+    }
+      body {
+          background-color: indianred;
+           background-image: url('cherry%20blossom%20effects3.gif');
+          background-size: 1950px 1000pt;
+          font-size: 15px;
+          color: black;
+          
+      }
+   
+      #logoimage {
+          width:  316px;
+          height: 98px;
+      }
+      h1 {
+          font-family: "metro";
+          text-align: center;
+          color:black;
+          font-size: 15pt;
+      }
+    
+      h3 {
+          font-family: "metro"; 
+          font-size: 10pt;
+          color: black;
+      }
+        h4 {
+            font-size: 15pt;
+            color: black;
+            text-align: left;
+            line-height: 10pt;
+        }
+        p {
+            font-size: 15pt;
+            color: black;
+            text-align: left;
+        }
+      a {
+          font-family: "metro";
+          font-size: 10pt;
+      }
+        .intro {
+            background-color: white;
+            height: 80pt;
+            border: 1px solid black;
+        }
+    
+
+      .poporder {
+            border: 5px solid black;
+            width: 25%;
+          float: left;
+          margin: 60px;
+        }
+        
+  
+        
+        #blogpic {
+            width: 30%;
+            border: 10px solid black;
+            float: left;
+        }
+        .blogimg {
+            width: 80%;
+             }
+        div.desc {
+            font-family: "metro";
+            font-size: 15px;
+            color: black;
+            padding: 5px;
+            text-align: center;
+            float: left;
+            margin-top: 380px;
+            margin-left: -350px;
+            
+    }
+        
+            
+         
+        #aboutus {
+            width: 23%;
+            float: left;
+            border: 10px solid black;
+        }
+        #blogpic, #aboutus {
+            margin: 30px;
+        }
+        .searchbox {
+            width: 35%;
+          display: inline-block;
+            background-color: orange;
+            border: 5px solid black;
+        }
+        #content {
+            height: 1650px;
+            border: 2px solid red;
+            background:linear-gradient(rgba(260,260, 260,1), rgba(255,0,0,0));
+        }
+        #socmed1 {
+            width: 10%;
+            float: left;
+        }
+         #socmed2 {
+            width: 8%;
+            float: left;
+        }
+         #socmed3 {
+            width: 10%;
+            float: left;
+        }
+        #socmed1, #socmed2, #socmed3 {
+            margin: 10px;
+        }
+        .socmed {
+            width: 10%;
+            float: left;
+            margin-top: 190px;
+            margin-left: -300px;
+        }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+    footer {
+      background-color: #555;
+        float: none;
+      color: white;
+      padding: 15px;
+    
+    }
+        
+      
+  </style>
+</head>
+<body>
+<header>
+    </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="logo%20complete.gif" id="logoimage">
+        </a>
+    </div>
+      
+      <div>
+      <h3>Welcome all to Mini Akiba! A Canadian Store with the latest Japanese Products and goods!</h3>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Mini%20Akiba%20product%20list.html">Search</a></li>
+        <li><a href="#">Online Shop</a></li>
+        <li><a href="#">Blog</a></li>
+         <li><a href="#">Distribution</a></li>
+          <li><a href="#">Media Inquiries</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+              <select name="province" id="province">
+    <option value="choose">Language</option>
+    <option value="BC">English</option>
+    <option value="AB">Japanese</option>
+    <option value="SK">Chinese</option>
+</select>  
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> go to cart</a></li>
+      </ul>
+    </div>
+  </div>
+    </nav>
+<div class="intro">
+    <h4><b>Our company was founded by Keiju Sekiguchi, who is passionate towards Japanese culture and tradition.</b></h4>
+       <h4><b> Though, since he lived in Canada, it felt dissapointing to get the latest Japanese products months after its release in Japan.</b></h4>
+       <h4><b> Since then, he pledged to provide his customers with the latest products from Japan as soon as possible.</b></h4>
+       <h4><b> What you see here is one of the Japanese products that are recently released, or delivered due to special order from our loyal customers.</b></h4></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    
+        <h1>Our New Arrivals!</h1>
+    
+    
+    
+        
+
+<div id="slider1" class="csslider infinity">
+  <input type="radio" name="slides" id="slides_1"/>
+  <input type="radio" name="slides" checked="checked" id="slides_2"/>
+  <input type="radio" name="slides" id="slides_3"/>
+  <input type="radio" name="slides" id="slides_4"/>
+  <input type="radio" name="slides" id="slides_5"/>
+  <input type="radio" name="slides" id="slides_6"/>
+  <ul>
+    <li>
+    </li>
+    <li><img src="DSCF7623.JPG" style="width: 110%">
+    </li>
+    <li>
+      <div>
+        <div>
+        </div>
+      </div>
+    </li>
+    <li><img src="DSCF7631.JPG" style="width: 100%">
+    </li>
+    <li><img src="DSCF7639.JPG" style="width: 110%">
+    </li>
+    <li>
+      <div id="center"><a id="dex-sign" href="http://drygiel.com" target="_blank" class="play"></a></div>
+    </li>
+  </ul>
+  <div class="arrows">
+    <label for="slides_1"></label>
+    <label for="slides_2"></label>
+    <label for="slides_3"></label>
+    <label for="slides_4"></label>
+    <label for="slides_5"></label>
+    <label for="slides_6"></label>
+    <label for="slides_1" class="goto-first"></label>
+    <label for="slides_6" class="goto-last"></label>
+  </div>
+  <div class="navigation"> 
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+      <label for="slides_5"></label>
+      <label for="slides_6"></label>
+    </div>
+  </div>
+    </div>
+
+    <div id="content">
+        <h1>Popular Orders</h1>
+        
+        <div>
+        <a href="website%20product%20page.html"><img src="DSCF7607.JPG" class="poporder"></a>
+    </div>
+    <div>
+        <img src="DSCF7586.JPG" class="poporder">
+        </div>
+    <div> 
+        <img src="DSCF7599.JPG" class="poporder">
+        </div>
+ 
+        <div class="blogimg">
+            <img src="P1060579.JPG" id="blogpic"> 
+            <div class="desc">Store Blog</div>
+        </div>
+        
+        <div>
+        <img src="aboutus.jpg" id="aboutus">
+            <div class="desc">Who are we?</div>
+        </div>
+         <div class="searchbox">
+             <h3>Check if we have what you want!</h3>
+             <p>Product Name:<input type="text" name="productname" id="productname" size="30"></p>
+             <br/>
+             <br/>
+             <p>Company Brand:<input type="text" name="companybrand" id="companybrand" size="30"></p>
+             <br/>
+             <br/>
+             <p>Date of Release: 
+             <input type="date" name="rdate" id="rdate">
+                   <select name="Product Type" id="Product Type">
+    <option value="choose">Product Type</option>
+    <option value="BC">Model Kit</option>
+    <option value="AB">Figure</option>
+    <option value="SK">Garage Kit</option>
+    <option value="MB">Toy</option>
+    <option value="ON">Clothes</option>
+    <option value="QC">Electronics</option>
+    <option value="games">Games</option>
+    <option value="magazine">Magazines</option>
+    <option value="books">Books</option>
+                 </select>
+             
+                 <a href="Mini%20Akiba%20product%20list.html"><button type="submit" name="search" value="search" class="css3button">Search</button> </a>
+       
+            <h3> Can't find it? THen Order it! </h3>
+             <p>Contact information:</p>
+             <p>4300 Main Street</p>
+             <p>Vancouver BV</p>
+             <p>V5E 1R1</p>
+             <p>Store: (604)433-0488</p>
+             <p>Mobile: (604)456-0785</p>
+             <button type="submit" name="search" value="search" class="css3button">Special Order</button> 
+             <br/>
+             <br/>
+             <br/>
+        </div>  
+        <div>
+        <img src="F_icon.svg.png" id="socmed1" alt="facebook"><img src="Twitter_icon.svg.png" id="socmed2" alt="twitter">
+            <img src="Black_Instagram_icon.svg.png" id="socmed3" alt="instagram"></div>
+        <div class="socmed"><h1>follow us!</h1></div>
+        </div> <!--closing tag for content-->
+     
+    
+
+<footer class="container-fluid text-center">
+</footer>
+
+</body>
+</html>
+
